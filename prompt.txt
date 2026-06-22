@@ -1,0 +1,9 @@
+I have a website cloudcoaching.ca implemented using the following details '- **Frontend framework:** React 19
+- **DOM rendering:** React DOM
+- **Routing:** React Router DOM
+- **Build tooling:** Create React App (`react-scripts`)
+- **Styling:** Tailwind CSS with PostCSS and Autoprefixer
+- **Additional UI library:** Material UI (`@mui/*`)
+- **Content/data model:** Local JSON files for tools and roadmaps
+- **Testing:** React Testing Library and Jest
+- **Deployment:** GitHub Pages via `gh-pages`'  I looking for an existed UI and with some places 2D and 3D animations look and feel. will you be able to help ?
