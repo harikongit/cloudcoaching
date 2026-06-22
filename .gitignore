@@ -7,3 +7,6 @@ firebase*.logs
 
 # Firebase configuration
 firebase.json
+
+# Node modules
+node_modules/
