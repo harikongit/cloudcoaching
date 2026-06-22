@@ -10,3 +10,4 @@ firebase.json
 
 # Node modules
 node_modules/
+cd code/frontend/node_modules/
