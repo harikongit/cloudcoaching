@@ -110,7 +110,6 @@ function RoadmapViewer() {
                   <div>
                     <h3 className="text-2xl font-bold text-[#111827]">{selectedRoadmap.name}</h3>
                     <p className="text-[#6B7280] mt-1">{selectedRoadmap.description}</p>
-                     <div className="flex items-center gap-4 mt-3">
                     <div className="flex items-center gap-4 mt-3 flex-wrap">
                       <span className="inline-flex items-center gap-1 text-sm bg-[#1E3A8A]/10 text-[#1E3A8A] px-3 py-1 rounded-full">
                         <Clock size={14} />
