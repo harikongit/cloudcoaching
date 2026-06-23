@@ -110,7 +110,8 @@ function RoadmapViewer() {
                   <div>
                     <h3 className="text-2xl font-bold text-[#111827]">{selectedRoadmap.name}</h3>
                     <p className="text-[#6B7280] mt-1">{selectedRoadmap.description}</p>
-                    <div className="flex items-center gap-4 mt-3">
+                     <div className="flex items-center gap-4 mt-3">
+                    <div className="flex items-center gap-4 mt-3 flex-wrap">
                       <span className="inline-flex items-center gap-1 text-sm bg-[#1E3A8A]/10 text-[#1E3A8A] px-3 py-1 rounded-full">
                         <Clock size={14} />
                         {selectedRoadmap.duration}
@@ -119,6 +120,18 @@ function RoadmapViewer() {
                         <BookOpen size={14} />
                         {selectedRoadmap.difficulty}
                       </span>
+
+                      {selectedRoadmap.documentationUrl && (
+                        <a
+                          href={selectedRoadmap.documentationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-sm bg-[#F59E0B]/10 text-[#F59E0B] px-3 py-1 rounded-full hover:bg-[#F59E0B]/20 transition-colors"
+                        >
+                          <ExternalLink size={14} />
+                          Official Docs
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
