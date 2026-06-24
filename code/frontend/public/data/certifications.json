@@ -1,0 +1,131 @@
+[
+  {
+    "id": "1",
+    "name": "AWS Solutions Architect Associate",
+    "provider": "Amazon Web Services",
+    "category": "AWS",
+    "difficulty": "Associate",
+    "duration": "130 minutes",
+    "cost": "$150 USD",
+    "description": "Validates ability to design distributed systems on AWS with cost optimization and security best practices.",
+    "mainImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhd3MlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["EC2", "S3", "VPC", "IAM", "RDS", "Lambda", "CloudFront"],
+    "prerequisites": ["Basic AWS knowledge", "Networking fundamentals"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/" },
+      { "type": "Practice Exams", "url": "https://aws.amazon.com/certification/certification-prep/" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "AWS DevOps Engineer Professional",
+    "provider": "Amazon Web Services",
+    "category": "AWS",
+    "difficulty": "Professional",
+    "duration": "180 minutes",
+    "cost": "$300 USD",
+    "description": "Validates technical expertise in provisioning, operating, and managing distributed systems on AWS.",
+    "mainImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhd3MlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["CodePipeline", "CodeBuild", "CloudFormation", "ECS", "EKS", "CloudWatch"],
+    "prerequisites": ["AWS Solutions Architect Associate or equivalent experience"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Azure Administrator Associate",
+    "provider": "Microsoft",
+    "category": "Azure",
+    "difficulty": "Associate",
+    "duration": "120 minutes",
+    "cost": "$165 USD",
+    "description": "Validates skills in implementing, managing, and monitoring Azure environments.",
+    "mainImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhenVyZSUyMGNsb3VkfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["Virtual Machines", "Storage", "Networking", "Azure AD", "Monitoring"],
+    "prerequisites": ["Azure fundamentals knowledge"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://learn.microsoft.com/en-us/certifications/azure-administrator/" }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Azure DevOps Engineer Expert",
+    "provider": "Microsoft",
+    "category": "Azure",
+    "difficulty": "Expert",
+    "duration": "120 minutes",
+    "cost": "$165 USD",
+    "description": "Validates expertise in designing and implementing DevOps practices for Azure.",
+    "mainImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhenVyZSUyMGNsb3VkfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["Azure DevOps", "GitHub Actions", "ARM Templates", "AKS", "Monitoring"],
+    "prerequisites": ["Azure Administrator Associate or equivalent"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://learn.microsoft.com/en-us/certifications/devops-engineer/" }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Google Cloud Professional DevOps Engineer",
+    "provider": "Google Cloud",
+    "category": "GCP",
+    "difficulty": "Professional",
+    "duration": "120 minutes",
+    "cost": "$200 USD",
+    "description": "Validates ability to build software delivery pipelines and optimize service reliability on GCP.",
+    "mainImage": "https://images.unsplash.com/photo-1535557142533-b5e1cc6e2a5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["Cloud Build", "GKE", "Cloud Monitoring", "SRE Practices", "CI/CD"],
+    "prerequisites": ["GCP fundamentals", "DevOps experience"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://cloud.google.com/certification/cloud-devops-engineer" }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "HashiCorp Terraform Associate",
+    "provider": "HashiCorp",
+    "category": "Infrastructure as Code",
+    "difficulty": "Associate",
+    "duration": "60 minutes",
+    "cost": "$70 USD",
+    "description": "Validates knowledge of Terraform concepts, workflows, and best practices.",
+    "mainImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGluZnJhc3RydWN0dXJlfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["HCL", "State Management", "Modules", "Providers", "Workspaces"],
+    "prerequisites": ["Basic infrastructure knowledge"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://www.hashicorp.com/certification/terraform-associate" }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "CKA - Certified Kubernetes Administrator",
+    "provider": "CNCF",
+    "category": "Container Orchestration",
+    "difficulty": "Professional",
+    "duration": "120 minutes",
+    "cost": "$395 USD",
+    "description": "Validates skills in Kubernetes cluster administration and troubleshooting.",
+    "mainImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxrdWJlcm5ldGVzfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["Cluster Architecture", "Workloads", "Services", "Storage", "Security"],
+    "prerequisites": ["Docker fundamentals", "Linux administration"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://www.cncf.io/certification/cka/" }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Docker Certified Associate",
+    "provider": "Docker",
+    "category": "Containerization",
+    "difficulty": "Associate",
+    "duration": "90 minutes",
+    "cost": "$195 USD",
+    "description": "Validates Docker skills including image creation, orchestration, and security.",
+    "mainImage": "https://images.unsplash.com/photo-1605745341112-85968b19335b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxkb2NrZXIlMjBjb250YWluZXJ8ZW58MHwwfHx8MTc4MjA5MzM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "topics": ["Image Creation", "Networking", "Storage", "Security", "Orchestration"],
+    "prerequisites": ["Docker fundamentals"],
+    "resources": [
+      { "type": "Official Guide", "url": "https://training.mirantis.com/certification/dca-certification-exam/" }
+    ]
+  }
+]
