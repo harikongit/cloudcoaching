@@ -1,8 +1,16 @@
+# Tatbiq - Excluded from GitHub sync
+# Vector database files
+.rag_db/project_vectors.lance
+
+# Firebase logs
+firebase*.logs
+
+# Firebase configuration
+firebase.json
+
+# Node modules
 node_modules/
-dist/
-.vite/
-.env
-.env.*
-*.local
-.DS_Store
-coverage/
+cd code/frontend/node_modules/
+
+# docs
+docs/
