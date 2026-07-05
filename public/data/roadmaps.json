@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "name": "AWS DevOps Engineer Path",
+    "description": "Complete roadmap to become an AWS DevOps Engineer covering CI/CD, infrastructure automation, and monitoring.",
+    "category": "AWS",
+    "duration": "16 weeks",
+    "difficulty": "Intermediate to Advanced",
+    "mainImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhd3MlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "documentationUrl": "https://docs.aws.amazon.com/",
+    "certifications": ["AWS Solutions Architect Associate", "AWS DevOps Engineer Professional"],
+    "steps": [
+      { "id": "1-1", "title": "AWS Fundamentals", "description": "Core AWS services: EC2, S3, VPC, IAM", "duration": "2 weeks", "tools": ["AWS Console", "AWS CLI"], "resources": ["AWS Documentation", "A Cloud Guru"] },
+      { "id": "1-2", "title": "Infrastructure as Code", "description": "CloudFormation and Terraform for AWS", "duration": "3 weeks", "tools": ["CloudFormation", "Terraform"], "resources": ["HashiCorp Learn", "AWS CloudFormation Guide"] },
+      { "id": "1-3", "title": "CI/CD Pipelines", "description": "CodePipeline, CodeBuild, CodeDeploy", "duration": "3 weeks", "tools": ["AWS CodePipeline", "Jenkins"], "resources": ["AWS DevOps Blog", "Jenkins Documentation"] },
+      { "id": "1-4", "title": "Containerization", "description": "ECS, EKS, and Fargate", "duration": "3 weeks", "tools": ["Docker", "Kubernetes", "EKS"], "resources": ["Docker Documentation", "EKS Workshop"] },
+      { "id": "1-5", "title": "Monitoring & Logging", "description": "CloudWatch, X-Ray, CloudTrail", "duration": "2 weeks", "tools": ["CloudWatch", "Prometheus"], "resources": ["AWS Observability Workshop"] },
+      { "id": "1-6", "title": "Security & Compliance", "description": "Security best practices and automation", "duration": "3 weeks", "tools": ["AWS Config", "Security Hub"], "resources": ["AWS Security Best Practices"] }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Azure DevOps Engineer Path",
+    "description": "Master Azure DevOps services and become proficient in cloud-native development on Microsoft Azure.",
+    "category": "Azure",
+    "duration": "14 weeks",
+    "difficulty": "Intermediate to Advanced",
+    "mainImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhenVyZSUyMGNsb3VkfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "documentationUrl": "https://learn.microsoft.com/en-us/azure/devops/",
+    "certifications": ["Azure Administrator Associate", "Azure DevOps Engineer Expert"],
+    "steps": [
+      { "id": "2-1", "title": "Azure Fundamentals", "description": "Core Azure services and portal navigation", "duration": "2 weeks", "tools": ["Azure Portal", "Azure CLI"], "resources": ["Microsoft Learn", "Azure Documentation"] },
+      { "id": "2-2", "title": "ARM & Bicep", "description": "Infrastructure as Code with ARM templates and Bicep", "duration": "3 weeks", "tools": ["ARM Templates", "Bicep", "Terraform"], "resources": ["Bicep Documentation", "ARM Template Reference"] },
+      { "id": "2-3", "title": "Azure DevOps Services", "description": "Repos, Pipelines, Boards, Artifacts", "duration": "3 weeks", "tools": ["Azure DevOps", "GitHub Actions"], "resources": ["Azure DevOps Labs", "Microsoft Learn"] },
+      { "id": "2-4", "title": "AKS & Containers", "description": "Azure Kubernetes Service and container solutions", "duration": "3 weeks", "tools": ["Docker", "AKS", "ACR"], "resources": ["AKS Documentation", "Container Workshop"] },
+      { "id": "2-5", "title": "Monitoring & Governance", "description": "Azure Monitor, Log Analytics, Policy", "duration": "3 weeks", "tools": ["Azure Monitor", "Application Insights"], "resources": ["Azure Monitor Documentation"] }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "GCP DevOps Engineer Path",
+    "description": "Learn Google Cloud Platform DevOps practices including GKE, Cloud Build, and SRE principles.",
+    "category": "GCP",
+    "duration": "14 weeks",
+    "difficulty": "Intermediate to Advanced",
+    "mainImage": "https://images.unsplash.com/photo-1535557142533-b5e1cc6e2a5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "documentationUrl": "https://cloud.google.com/docs",
+    "certifications": ["Google Cloud Associate Cloud Engineer", "Google Cloud Professional DevOps Engineer"],
+    "steps": [
+      { "id": "3-1", "title": "GCP Fundamentals", "description": "Compute Engine, Cloud Storage, VPC, IAM", "duration": "2 weeks", "tools": ["GCP Console", "gcloud CLI"], "resources": ["Google Cloud Skills Boost", "GCP Documentation"] },
+      { "id": "3-2", "title": "Infrastructure as Code", "description": "Deployment Manager and Terraform for GCP", "duration": "3 weeks", "tools": ["Deployment Manager", "Terraform"], "resources": ["Terraform GCP Provider Docs"] },
+      { "id": "3-3", "title": "CI/CD with Cloud Build", "description": "Cloud Build, Cloud Deploy, Artifact Registry", "duration": "3 weeks", "tools": ["Cloud Build", "Cloud Deploy"], "resources": ["Cloud Build Documentation"] },
+      { "id": "3-4", "title": "GKE & Containers", "description": "Google Kubernetes Engine mastery", "duration": "3 weeks", "tools": ["Docker", "GKE", "Anthos"], "resources": ["GKE Documentation", "Kubernetes.io"] },
+      { "id": "3-5", "title": "SRE Practices", "description": "Monitoring, logging, and reliability engineering", "duration": "3 weeks", "tools": ["Cloud Monitoring", "Cloud Logging"], "resources": ["Google SRE Book", "SRE Workbook"] }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Terraform Mastery",
+    "description": "Deep dive into Terraform for multi-cloud infrastructure management and advanced patterns.",
+    "category": "Infrastructure as Code",
+    "duration": "10 weeks",
+    "difficulty": "Beginner to Advanced",
+    "mainImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGluZnJhc3RydWN0dXJlfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "documentationUrl": "https://developer.hashicorp.com/terraform/docs",
+    "certifications": ["HashiCorp Terraform Associate"],
+    "steps": [
+      { "id": "4-1", "title": "Terraform Basics", "description": "HCL syntax, providers, resources, and state", "duration": "2 weeks", "tools": ["Terraform CLI", "VS Code"], "resources": ["HashiCorp Learn", "Terraform Documentation"] },
+      { "id": "4-2", "title": "State Management", "description": "Remote state, locking, and workspaces", "duration": "2 weeks", "tools": ["Terraform Cloud", "S3 Backend"], "resources": ["Terraform State Documentation"] },
+      { "id": "4-3", "title": "Modules & Reusability", "description": "Creating and using Terraform modules", "duration": "2 weeks", "tools": ["Terraform Registry"], "resources": ["Module Development Guide"] },
+      { "id": "4-4", "title": "Advanced Patterns", "description": "Dynamic blocks, for_each, conditionals", "duration": "2 weeks", "tools": ["Terraform"], "resources": ["Terraform Best Practices"] },
+      { "id": "4-5", "title": "CI/CD Integration", "description": "Terraform in pipelines and GitOps", "duration": "2 weeks", "tools": ["GitHub Actions", "Terraform Cloud"], "resources": ["GitOps with Terraform Guide"] }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Kubernetes Administrator Path",
+    "description": "Comprehensive Kubernetes training from basics to CKA certification preparation.",
+    "category": "Container Orchestration",
+    "duration": "12 weeks",
+    "difficulty": "Intermediate to Advanced",
+    "mainImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxrdWJlcm5ldGVzfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "documentationUrl": "https://kubernetes.io/docs/home/",
+    "certifications": ["CKA - Certified Kubernetes Administrator", "CKAD - Certified Kubernetes Application Developer"],
+    "steps": [
+      { "id": "5-1", "title": "Container Fundamentals", "description": "Docker basics and container concepts", "duration": "2 weeks", "tools": ["Docker", "containerd"], "resources": ["Docker Documentation", "Container Training"] },
+      { "id": "5-2", "title": "Kubernetes Architecture", "description": "Control plane, nodes, and core components", "duration": "2 weeks", "tools": ["kubectl", "minikube"], "resources": ["Kubernetes.io", "CNCF Training"] },
+      { "id": "5-3", "title": "Workloads & Scheduling", "description": "Deployments, StatefulSets, DaemonSets", "duration": "2 weeks", "tools": ["kubectl"], "resources": ["Kubernetes Workloads Documentation"] },
+      { "id": "5-4", "title": "Networking & Services", "description": "Services, Ingress, Network Policies", "duration": "2 weeks", "tools": ["kubectl", "Calico"], "resources": ["Kubernetes Networking Guide"] },
+      { "id": "5-5", "title": "Storage & Configuration", "description": "PV, PVC, ConfigMaps, Secrets", "duration": "2 weeks", "tools": ["kubectl"], "resources": ["Kubernetes Storage Documentation"] },
+      { "id": "5-6", "title": "Security & Troubleshooting", "description": "RBAC, security contexts, debugging", "duration": "2 weeks", "tools": ["kubectl", "k9s"], "resources": ["CKA Exam Guide", "Kubernetes Security"] }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "CI/CD Pipeline Mastery",
+    "description": "Learn to build robust CI/CD pipelines using various tools and best practices.",
+    "category": "CI/CD",
+    "duration": "8 weeks",
+    "difficulty": "Intermediate",
+    "mainImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxjaWNkJTIwcGlwZWxpbmV8ZW58MHwwfHx8MTc4MjA5MzM5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "documentationUrl": "https://docs.github.com/en/actions",
+    "certifications": ["Certified Jenkins Engineer", "GitHub Actions Certification"],
+    "steps": [
+      { "id": "6-1", "title": "CI/CD Fundamentals", "description": "Understanding continuous integration and deployment concepts", "duration": "1 week", "tools": ["Git"], "resources": ["CI/CD Best Practices Guide"] },
+      { "id": "6-2", "title": "Jenkins Pipelines", "description": "Building pipelines with Jenkins and Groovy", "duration": "2 weeks", "tools": ["Jenkins", "Groovy"], "resources": ["Jenkins Pipeline Documentation"] },
+      { "id": "6-3", "title": "GitHub Actions", "description": "Workflow automation with GitHub Actions", "duration": "2 weeks", "tools": ["GitHub Actions"], "resources": ["GitHub Actions Documentation"] },
+      { "id": "6-4", "title": "GitLab CI/CD", "description": "Building pipelines with GitLab", "duration": "2 weeks", "tools": ["GitLab CI"], "resources": ["GitLab CI Documentation"] },
+      { "id": "6-5", "title": "Advanced Patterns", "description": "Blue-green deployments, canary releases, feature flags", "duration": "1 week", "tools": ["ArgoCD", "Spinnaker"], "resources": ["Deployment Strategies Guide"] }
+    ]
+  }
+]
