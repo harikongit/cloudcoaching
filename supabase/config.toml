@@ -1,5 +1,5 @@
 [project]
-name = "tatbiq-app"
+name = "cloudcoaching-app"
 
 [api]
 enabled = true

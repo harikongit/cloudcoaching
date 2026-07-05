@@ -1,4 +1,4 @@
-# Tatbiq - Excluded from GitHub sync
+# Cloudcoaching - Excluded from GitHub sync
 # Vector database files
 .rag_db/project_vectors.lance
 
