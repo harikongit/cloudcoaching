@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "name": "AWS DevOps Bootcamp",
+    "description": "Intensive 8-week bootcamp covering AWS DevOps practices from CI/CD to infrastructure automation.",
+    "duration": "8 weeks",
+    "format": "Live Online",
+    "price": "$2,499",
+    "startDate": "2025-02-01",
+    "category": "AWS",
+    "mainImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhd3MlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "highlights": [
+      "Hands-on labs with real AWS environments",
+      "CI/CD pipeline implementation",
+      "Infrastructure as Code with CloudFormation & Terraform",
+      "Container orchestration with EKS",
+      "Certification preparation included"
+    ],
+    "instructor": "Senior AWS Solutions Architect",
+    "certification": "AWS DevOps Engineer Professional Prep"
+  },
+  {
+    "id": "2",
+    "name": "Azure DevOps Bootcamp",
+    "description": "Comprehensive Azure DevOps training covering Azure services, pipelines, and cloud-native development.",
+    "duration": "8 weeks",
+    "format": "Live Online",
+    "price": "$2,499",
+    "startDate": "2025-02-15",
+    "category": "Azure",
+    "mainImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhenVyZSUyMGNsb3VkfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "highlights": [
+      "Azure DevOps Services mastery",
+      "ARM Templates and Bicep",
+      "AKS deployment and management",
+      "GitHub Actions integration",
+      "Azure DevOps Engineer Expert prep"
+    ],
+    "instructor": "Microsoft Certified Trainer",
+    "certification": "Azure DevOps Engineer Expert Prep"
+  },
+  {
+    "id": "3",
+    "name": "GCP DevOps Bootcamp",
+    "description": "Master Google Cloud Platform DevOps practices including GKE, Cloud Build, and SRE principles.",
+    "duration": "8 weeks",
+    "format": "Live Online",
+    "price": "$2,499",
+    "startDate": "2025-03-01",
+    "category": "GCP",
+    "mainImage": "https://images.unsplash.com/photo-1535557142533-b5e1cc6e2a5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBjbG91ZHxlbnwwfDB8fHwxNzgyMDkzMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "highlights": [
+      "GCP core services deep dive",
+      "Cloud Build and Cloud Deploy",
+      "GKE administration",
+      "SRE practices and monitoring",
+      "Professional DevOps Engineer prep"
+    ],
+    "instructor": "Google Cloud Certified Professional",
+    "certification": "GCP Professional DevOps Engineer Prep"
+  },
+  {
+    "id": "4",
+    "name": "Terraform Intensive",
+    "description": "Deep dive into Terraform for multi-cloud infrastructure management.",
+    "duration": "4 weeks",
+    "format": "Live Online",
+    "price": "$1,299",
+    "startDate": "2025-02-10",
+    "category": "Infrastructure as Code",
+    "mainImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMGluZnJhc3RydWN0dXJlfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "highlights": [
+      "HCL mastery",
+      "State management strategies",
+      "Module development",
+      "Multi-cloud deployments",
+      "Terraform Associate certification prep"
+    ],
+    "instructor": "HashiCorp Certified Instructor",
+    "certification": "HashiCorp Terraform Associate Prep"
+  },
+  {
+    "id": "5",
+    "name": "Kubernetes Administrator Bootcamp",
+    "description": "Comprehensive Kubernetes training preparing you for CKA certification.",
+    "duration": "6 weeks",
+    "format": "Live Online",
+    "price": "$1,999",
+    "startDate": "2025-02-20",
+    "category": "Container Orchestration",
+    "mainImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxrdWJlcm5ldGVzfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "highlights": [
+      "Cluster administration",
+      "Workload management",
+      "Networking and services",
+      "Security and RBAC",
+      "CKA exam preparation"
+    ],
+    "instructor": "CNCF Certified Kubernetes Instructor",
+    "certification": "CKA - Certified Kubernetes Administrator Prep"
+  }
+]
