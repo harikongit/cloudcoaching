@@ -39,78 +39,80 @@ function Header() {
             <span className="text-white font-bold text-xl">CloudCoaching</span>
           </Link>
 
-          {/* Desktop Navigation - Left aligned after logo */}
-          <div className="hidden md:flex items-center space-x-6 ml-10">
-            <Link 
-              to="/" 
-              className={`transition-colors font-medium ${
-                isActive('/') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              Home
-            </Link>
-            <Link 
-              to="/roadmaps" 
-              className={`transition-colors font-medium ${
-                isActive('/roadmaps') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              Roadmaps
-            </Link>
-            <Link 
-              to="/tools" 
-              className={`transition-colors font-medium ${
-                isActive('/tools') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              DevOps Tools
-            </Link>
-            <Link 
-              to="/certifications" 
-              className={`transition-colors font-medium ${
-                isActive('/certifications') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              Certifications
-            </Link>
-            <Link 
-              to="/ai-implementation" 
-              className={`transition-colors font-medium ${
-                isActive('/ai-implementation') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              AI Implementation
-            </Link>
-            <Link 
-              to="/bootcamps" 
-              className={`transition-colors font-medium ${
-                isActive('/bootcamps') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              Bootcamps
-            </Link>
-            <Link 
-              to="/about" 
-              className={`transition-colors font-medium ${
-                isActive('/about') 
-                  ? 'text-[#10B981]' 
-                  : 'text-white hover:text-[#10B981]'
-              }`}
-            >
-              About
-            </Link>
+          {/* Desktop Navigation - centered after the logo */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="flex items-center space-x-6">
+              <Link 
+                to="/" 
+                className={`transition-colors font-medium ${
+                  isActive('/') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/roadmaps" 
+                className={`transition-colors font-medium ${
+                  isActive('/roadmaps') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                Roadmaps
+              </Link>
+              <Link 
+                to="/tools" 
+                className={`transition-colors font-medium ${
+                  isActive('/tools') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                DevOps Tools
+              </Link>
+              <Link 
+                to="/certifications" 
+                className={`transition-colors font-medium ${
+                  isActive('/certifications') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                Certifications
+              </Link>
+              <Link 
+                to="/ai-implementation" 
+                className={`transition-colors font-medium ${
+                  isActive('/ai-implementation') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                AI Implementation
+              </Link>
+              <Link 
+                to="/bootcamps" 
+                className={`transition-colors font-medium ${
+                  isActive('/bootcamps') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                Bootcamps
+              </Link>
+              <Link 
+                to="/about" 
+                className={`transition-colors font-medium ${
+                  isActive('/about') 
+                    ? 'text-[#10B981]' 
+                    : 'text-white hover:text-[#10B981]'
+                }`}
+              >
+                About
+              </Link>
+            </div>
           </div>
 
           {/* Spacer to push mobile menu button to right */}

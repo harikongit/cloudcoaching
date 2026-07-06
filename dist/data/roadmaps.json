@@ -10,12 +10,14 @@
     "documentationUrl": "https://docs.aws.amazon.com/",
     "certifications": ["AWS Solutions Architect Associate", "AWS DevOps Engineer Professional"],
     "steps": [
-      { "id": "1-1", "title": "AWS Fundamentals", "description": "Core AWS services: EC2, S3, VPC, IAM", "duration": "2 weeks", "tools": ["AWS Console", "AWS CLI"], "resources": ["AWS Documentation", "A Cloud Guru"] },
-      { "id": "1-2", "title": "Infrastructure as Code", "description": "CloudFormation and Terraform for AWS", "duration": "3 weeks", "tools": ["CloudFormation", "Terraform"], "resources": ["HashiCorp Learn", "AWS CloudFormation Guide"] },
-      { "id": "1-3", "title": "CI/CD Pipelines", "description": "CodePipeline, CodeBuild, CodeDeploy", "duration": "3 weeks", "tools": ["AWS CodePipeline", "Jenkins"], "resources": ["AWS DevOps Blog", "Jenkins Documentation"] },
-      { "id": "1-4", "title": "Containerization", "description": "ECS, EKS, and Fargate", "duration": "3 weeks", "tools": ["Docker", "Kubernetes", "EKS"], "resources": ["Docker Documentation", "EKS Workshop"] },
-      { "id": "1-5", "title": "Monitoring & Logging", "description": "CloudWatch, X-Ray, CloudTrail", "duration": "2 weeks", "tools": ["CloudWatch", "Prometheus"], "resources": ["AWS Observability Workshop"] },
-      { "id": "1-6", "title": "Security & Compliance", "description": "Security best practices and automation", "duration": "3 weeks", "tools": ["AWS Config", "Security Hub"], "resources": ["AWS Security Best Practices"] }
+      { "id": "1-1", "title": "AWS Fundamentals", "description": "Core AWS services: EC2, S3, VPC, IAM, Lambda, EBS", "duration": "2 weeks", "tools": ["AWS Console", "AWS CLI"], "resources": ["AWS Documentation", "A Cloud Guru"] },
+      { "id": "1-2", "title": "Compute Services", "description": "EC2 instances, Lambda functions, ECS, EKS, and Fargate", "duration": "2 weeks", "tools": ["EC2", "Lambda", "ECS", "EKS"], "resources": ["AWS Compute Documentation", "AWS Workshops"] },
+      { "id": "1-3", "title": "Storage & Databases", "description": "S3, EBS, RDS, DynamoDB for data persistence", "duration": "2 weeks", "tools": ["S3", "EBS", "RDS", "DynamoDB"], "resources": ["AWS Storage Documentation", "AWS Database Workshop"] },
+      { "id": "1-4", "title": "Networking & Security", "description": "VPC, ELB, IAM, KMS for secure architectures", "duration": "2 weeks", "tools": ["VPC", "ELB", "IAM", "KMS"], "resources": ["AWS Networking Documentation", "AWS Security Best Practices"] },
+      { "id": "1-5", "title": "Infrastructure as Code", "description": "CloudFormation and Terraform for AWS", "duration": "3 weeks", "tools": ["CloudFormation", "Terraform"], "resources": ["HashiCorp Learn", "AWS CloudFormation Guide"] },
+      { "id": "1-6", "title": "CI/CD Pipelines", "description": "CodePipeline, CodeBuild, CodeDeploy", "duration": "2 weeks", "tools": ["AWS CodePipeline", "CodeBuild", "CodeDeploy"], "resources": ["AWS DevOps Blog", "AWS CI/CD Workshop"] },
+      { "id": "1-7", "title": "Monitoring & Logging", "description": "CloudWatch, X-Ray, CloudTrail for observability", "duration": "2 weeks", "tools": ["CloudWatch", "CloudTrail", "X-Ray"], "resources": ["AWS Observability Workshop"] },
+      { "id": "1-8", "title": "AI/ML Services", "description": "Amazon Bedrock and SageMaker for AI workloads", "duration": "1 week", "tools": ["Bedrock", "SageMaker"], "resources": ["AWS AI/ML Documentation", "AWS ML Workshop"] }
     ]
   },
   {
@@ -23,17 +25,21 @@
     "name": "Azure DevOps Engineer Path",
     "description": "Master Azure DevOps services and become proficient in cloud-native development on Microsoft Azure.",
     "category": "Azure",
-    "duration": "14 weeks",
+    "duration": "16 weeks",
     "difficulty": "Intermediate to Advanced",
     "mainImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTk3Nzh8MHwxfHNlYXJjaHwxfHxhenVyZSUyMGNsb3VkfGVufDB8MHx8fDE3ODIwOTMzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     "documentationUrl": "https://learn.microsoft.com/en-us/azure/devops/",
     "certifications": ["Azure Administrator Associate", "Azure DevOps Engineer Expert"],
     "steps": [
       { "id": "2-1", "title": "Azure Fundamentals", "description": "Core Azure services and portal navigation", "duration": "2 weeks", "tools": ["Azure Portal", "Azure CLI"], "resources": ["Microsoft Learn", "Azure Documentation"] },
-      { "id": "2-2", "title": "ARM & Bicep", "description": "Infrastructure as Code with ARM templates and Bicep", "duration": "3 weeks", "tools": ["ARM Templates", "Bicep", "Terraform"], "resources": ["Bicep Documentation", "ARM Template Reference"] },
-      { "id": "2-3", "title": "Azure DevOps Services", "description": "Repos, Pipelines, Boards, Artifacts", "duration": "3 weeks", "tools": ["Azure DevOps", "GitHub Actions"], "resources": ["Azure DevOps Labs", "Microsoft Learn"] },
-      { "id": "2-4", "title": "AKS & Containers", "description": "Azure Kubernetes Service and container solutions", "duration": "3 weeks", "tools": ["Docker", "AKS", "ACR"], "resources": ["AKS Documentation", "Container Workshop"] },
-      { "id": "2-5", "title": "Monitoring & Governance", "description": "Azure Monitor, Log Analytics, Policy", "duration": "3 weeks", "tools": ["Azure Monitor", "Application Insights"], "resources": ["Azure Monitor Documentation"] }
+      { "id": "2-2", "title": "Compute Services", "description": "Virtual Machines, Azure Functions, Container Apps", "duration": "2 weeks", "tools": ["Virtual Machines", "Azure Functions", "Container Apps"], "resources": ["Azure Compute Documentation", "Microsoft Learn"] },
+      { "id": "2-3", "title": "Storage & Databases", "description": "Blob Storage, Azure Files, SQL Database, Cosmos DB", "duration": "2 weeks", "tools": ["Blob Storage", "Azure Files", "SQL Database", "Cosmos DB"], "resources": ["Azure Storage Documentation", "Azure Database Workshop"] },
+      { "id": "2-4", "title": "Networking & Security", "description": "Virtual Network, Load Balancer, Entra ID, Key Vault", "duration": "2 weeks", "tools": ["Virtual Network", "Load Balancer", "Entra ID", "Key Vault"], "resources": ["Azure Networking Documentation", "Azure Security Best Practices"] },
+      { "id": "2-5", "title": "Infrastructure as Code", "description": "ARM templates, Bicep, and Terraform for Azure", "duration": "2 weeks", "tools": ["ARM Templates", "Bicep", "Terraform"], "resources": ["Bicep Documentation", "ARM Template Reference"] },
+      { "id": "2-6", "title": "Azure DevOps Services", "description": "Repos, Pipelines, Boards, Artifacts", "duration": "2 weeks", "tools": ["Azure DevOps", "GitHub Actions"], "resources": ["Azure DevOps Labs", "Microsoft Learn"] },
+      { "id": "2-7", "title": "Container Orchestration", "description": "AKS, Container Apps, and container solutions", "duration": "2 weeks", "tools": ["AKS", "Container Apps", "ACR"], "resources": ["AKS Documentation", "Container Workshop"] },
+      { "id": "2-8", "title": "Monitoring & Governance", "description": "Azure Monitor, Application Insights, Policy", "duration": "1 week", "tools": ["Azure Monitor", "Application Insights"], "resources": ["Azure Monitor Documentation"] },
+      { "id": "2-9", "title": "AI Services", "description": "Azure OpenAI Service and AI Foundry", "duration": "1 week", "tools": ["Azure OpenAI", "AI Foundry"], "resources": ["Azure AI Documentation", "OpenAI on Azure Workshop"] }
     ]
   },
   {

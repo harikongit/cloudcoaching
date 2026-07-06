@@ -64,7 +64,7 @@ function AboutPage() {
               <div className="flex-shrink-0">
                 <div className="relative">
                   <img 
-                    src="/attachments/attachment_1782272606_95b6e400.png" 
+                    src="/attachments/HK2.png" 
                     alt="Hari K"
                     className="w-32 h-32 rounded-full object-cover border-4 border-cyan-100"
                   />

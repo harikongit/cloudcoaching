@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Bot, Target, Code, MessageSquare, Lightbulb, ArrowRight, CheckCircle, Play } from 'lucide-react';
 import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 
 function AIImplementationPage() {
   const [aiPrompt, setAiPrompt] = useState('');
