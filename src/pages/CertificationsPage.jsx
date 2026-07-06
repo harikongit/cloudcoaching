@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Award, Clock, DollarSign, BookOpen, ExternalLink, Search } from 'lucide-react';
 import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 
 function CertificationsPage() {
   const [certifications, setCertifications] = useState([]);
@@ -57,14 +58,16 @@ function CertificationsPage() {
     <div className="min-h-screen bg-[#F3F4F6]">
       <Header />
 
-      {/* Header */}
-      <div className="bg-gradient-to-r from-[#1E3A8A] to-[#7B42BC] text-white py-16 pt-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Header - Silver Disco */}
+      <div className="silver-disco-bg text-white pt-28 pb-16 min-h-[280px] flex items-center relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="flex items-center gap-3 mb-4">
-            <Award size={40} className="text-[#F59E0B]" />
-            <h1 className="text-4xl font-bold">Cloud Certifications</h1>
+            <div className="w-14 h-14 bg-gradient-to-br from-[#F59E0B] to-[#D97706] rounded-xl flex items-center justify-center shadow-lg">
+              <Award size={28} className="text-white" />
+            </div>
+            <h1 className="text-4xl font-bold silver-text">Cloud Certifications</h1>
           </div>
-          <p className="text-xl text-white/90 max-w-3xl">
+          <p className="text-xl text-gray-300 max-w-3xl">
             Validate your cloud and DevOps skills with industry-recognized certifications from AWS, Azure, GCP, and more.
           </p>
         </div>
@@ -115,15 +118,15 @@ function CertificationsPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredCertifications.map(cert => (
-              <div key={cert.id} className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 overflow-hidden">
+              <div key={cert.id} className="silver-card rounded-xl overflow-hidden min-h-[520px] flex flex-col">
+                <div className="h-48 overflow-hidden flex-shrink-0">
                   <img 
                     src={cert.mainImage} 
                     alt={cert.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 mb-3">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium border ${getCategoryColor(cert.category)}`}>
                       {cert.category}
@@ -150,14 +153,14 @@ function CertificationsPage() {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4 flex-grow">
                     {cert.topics.slice(0, 4).map((topic, idx) => (
-                      <span key={idx} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
+                      <span key={idx} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded h-fit">
                         {topic}
                       </span>
                     ))}
                     {cert.topics.length > 4 && (
-                      <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
+                      <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded h-fit">
                         +{cert.topics.length - 4} more
                       </span>
                     )}
@@ -167,7 +170,7 @@ function CertificationsPage() {
                     href={cert.resources[0]?.url || '#'}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-[#1E3A8A] text-white py-3 rounded-lg font-medium hover:bg-[#1e40af] transition-colors"
+                    className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#1E3A8A] to-[#0f3460] text-white py-3 rounded-lg font-medium hover:from-[#1e40af] hover:to-[#1E3A8A] transition-all mt-auto"
                   >
                     <ExternalLink size={18} />
                     Learn More
@@ -186,6 +189,7 @@ function CertificationsPage() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import ToolsPage from './pages/ToolsPage.jsx';
 import CertificationsPage from './pages/CertificationsPage.jsx';
 import AIImplementationPage from './pages/AIImplementationPage.jsx';
 import BootcampsPage from './pages/BootcampsPage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 
 // Create context for global state
 export const AppContext = createContext();
@@ -118,6 +119,7 @@ function App() {
           <Route path="/certifications" element={<CertificationsPage />} />
           <Route path="/ai-implementation" element={<AIImplementationPage />} />
           <Route path="/bootcamps" element={<BootcampsPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </AppContext.Provider>

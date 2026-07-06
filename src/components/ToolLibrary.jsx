@@ -103,7 +103,7 @@ function ToolLibrary() {
         )}
 
         {/* Search and Filters */}
-        <div className="bg-white rounded-2xl p-6 shadow-sm mb-8">
+        <div className="silver-card rounded-2xl p-6 mb-8">
           <div className="flex flex-col lg:flex-row gap-4">
             {/* Search Input */}
             <div className="flex-1 relative">
@@ -191,11 +191,11 @@ function ToolLibrary() {
           {filteredTools.map((tool, index) => (
             <div 
               key={tool.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm card-hover animate-fadeIn cursor-pointer"
+              className="silver-card rounded-2xl overflow-hidden animate-fadeIn cursor-pointer min-h-[380px] flex flex-col"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => setSelectedTool(tool)}
             >
-              <div className="relative">
+              <div className="relative flex-shrink-0">
                 <img 
                   src={tool.mainImage} 
                   alt={tool.name}
@@ -222,10 +222,10 @@ function ToolLibrary() {
                   {tool.skillLevel}
                 </span>
               </div>
-              <div className="p-5">
+              <div className="p-5 flex flex-col flex-grow">
                 <h3 className="text-lg font-bold text-[#111827] mb-2">{tool.name}</h3>
-                <p className="text-[#6B7280] text-sm mb-4 line-clamp-2">{tool.description}</p>
-                <div className="flex items-center justify-between">
+                <p className="text-[#6B7280] text-sm mb-4 line-clamp-2 flex-grow">{tool.description}</p>
+                <div className="flex items-center justify-between mt-auto">
                   <div className="flex items-center gap-1">
                     <Star className="text-[#F59E0B] fill-[#F59E0B]" size={16} />
                     <span className="font-semibold text-[#111827]">{tool.rating}</span>

@@ -5,6 +5,7 @@ import Header from '../components/Header.jsx';
 import RoadmapViewer from '../components/RoadmapViewer.jsx';
 import ToolLibrary from '../components/ToolLibrary.jsx';
 import FeedbackForm from '../components/FeedbackForm.jsx';
+import Footer from '../components/Footer.jsx';
 import { Map, Wrench, MessageSquare, ArrowRight, Github, Twitter, Linkedin, Mail, Award, Sparkles, GraduationCap, Cloud } from 'lucide-react';
 
 function HomePage() {
@@ -28,8 +29,8 @@ function HomePage() {
 
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
             {/* Feature 1 */}
-            <div className="text-center p-6 rounded-2xl bg-[#F3F4F6] card-hover lg:col-span-2">
-              <div className="w-14 h-14 bg-[#1E3A8A] rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <div className="silver-card text-center p-6 rounded-2xl lg:col-span-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#1E3A8A] to-[#0f3460] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Map className="text-white" size={28} />
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">Cloud Roadmaps</h3>
@@ -39,8 +40,8 @@ function HomePage() {
             </div>
 
             {/* Feature 2 */}
-            <div className="text-center p-6 rounded-2xl bg-[#F3F4F6] card-hover lg:col-span-2">
-              <div className="w-14 h-14 bg-[#10B981] rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <div className="silver-card text-center p-6 rounded-2xl lg:col-span-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Wrench className="text-white" size={28} />
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">DevOps Tools</h3>
@@ -50,8 +51,8 @@ function HomePage() {
             </div>
 
             {/* Feature 3 */}
-            <div className="text-center p-6 rounded-2xl bg-[#F3F4F6] card-hover lg:col-span-2">
-              <div className="w-14 h-14 bg-[#F59E0B] rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <div className="silver-card text-center p-6 rounded-2xl lg:col-span-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#F59E0B] to-[#D97706] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Award className="text-white" size={28} />
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">Certifications</h3>
@@ -61,8 +62,8 @@ function HomePage() {
             </div>
 
             {/* Feature 4 */}
-            <div className="text-center p-6 rounded-2xl bg-[#F3F4F6] card-hover lg:col-span-2">
-              <div className="w-14 h-14 bg-[#7B42BC] rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <div className="silver-card text-center p-6 rounded-2xl lg:col-span-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#7B42BC] to-[#5B21B6] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Sparkles className="text-white" size={28} />
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">AI Implementation</h3>
@@ -72,8 +73,8 @@ function HomePage() {
             </div>
 
             {/* Feature 5 */}
-            <div className="text-center p-6 rounded-2xl bg-[#F3F4F6] card-hover lg:col-span-2">
-              <div className="w-14 h-14 bg-[#326CE5] rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <div className="silver-card text-center p-6 rounded-2xl lg:col-span-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#326CE5] to-[#1D4ED8] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <GraduationCap className="text-white" size={28} />
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">Bootcamps</h3>
@@ -83,8 +84,8 @@ function HomePage() {
             </div>
 
             {/* Feature 6 */}
-            <div className="text-center p-6 rounded-2xl bg-[#F3F4F6] card-hover lg:col-span-2">
-              <div className="w-14 h-14 bg-[#FF9900] rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <div className="silver-card text-center p-6 rounded-2xl lg:col-span-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-14 h-14 bg-gradient-to-br from-[#FF9900] to-[#EA580C] rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <MessageSquare className="text-white" size={28} />
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">Community</h3>
@@ -172,75 +173,7 @@ function HomePage() {
       <FeedbackForm />
 
       {/* Footer */}
-      <footer className="bg-[#111827] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-5 gap-12">
-            {/* Brand */}
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-[#10B981] rounded-lg flex items-center justify-center">
-                  <Cloud className="text-white" size={24} />
-                </div>
-                <span className="font-bold text-xl">CloudCoaching</span>
-              </div>
-              <p className="text-gray-400 text-sm mb-4">
-                Your complete platform for mastering DevOps, cloud infrastructure, and earning industry certifications.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1E3A8A] transition-colors">
-                  <Github size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1E3A8A] transition-colors">
-                  <Twitter size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1E3A8A] transition-colors">
-                  <Linkedin size={20} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#1E3A8A] transition-colors">
-                  <Mail size={20} />
-                </a>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-semibold mb-4">Platform</h4>
-              <ul className="space-y-2">
-                <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
-                <li><Link to="/roadmaps" className="text-gray-400 hover:text-white transition-colors">Roadmaps</Link></li>
-                <li><Link to="/tools" className="text-gray-400 hover:text-white transition-colors">DevOps Tools</Link></li>
-                <li><Link to="/bootcamps" className="text-gray-400 hover:text-white transition-colors">Bootcamps</Link></li>
-              </ul>
-            </div>
-
-            {/* Certifications */}
-            <div>
-              <h4 className="font-semibold mb-4">Certifications</h4>
-              <ul className="space-y-2">
-                <li><Link to="/certifications" className="text-gray-400 hover:text-white transition-colors">AWS Certifications</Link></li>
-                <li><Link to="/certifications" className="text-gray-400 hover:text-white transition-colors">Azure Certifications</Link></li>
-                <li><Link to="/certifications" className="text-gray-400 hover:text-white transition-colors">GCP Certifications</Link></li>
-                <li><Link to="/certifications" className="text-gray-400 hover:text-white transition-colors">Terraform & K8s</Link></li>
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2">
-                <li><Link to="/ai-implementation" className="text-gray-400 hover:text-white transition-colors">AI Implementation</Link></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Support</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} CloudCoaching. All rights reserved. | Empowering DevOps Engineers Worldwide</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

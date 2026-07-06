@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GraduationCap, Clock, Calendar, DollarSign, Users, Award, Search, CheckCircle } from 'lucide-react';
 import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
 
 function BootcampsPage() {
   const [bootcamps, setBootcamps] = useState([]);
@@ -47,14 +48,16 @@ function BootcampsPage() {
     <div className="min-h-screen bg-[#F3F4F6]">
       <Header />
 
-      {/* Header */}
-      <div className="bg-gradient-to-r from-[#10B981] to-[#1E3A8A] text-white py-16 pt-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Header - Silver Disco */}
+      <div className="silver-disco-bg text-white pt-28 pb-16 min-h-[280px] flex items-center relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="flex items-center gap-3 mb-4">
-            <GraduationCap size={40} className="text-[#F59E0B]" />
-            <h1 className="text-4xl font-bold">DevOps Bootcamps</h1>
+            <div className="w-14 h-14 bg-gradient-to-br from-[#10B981] to-[#059669] rounded-xl flex items-center justify-center shadow-lg">
+              <GraduationCap size={28} className="text-white" />
+            </div>
+            <h1 className="text-4xl font-bold silver-text">DevOps Bootcamps</h1>
           </div>
-          <p className="text-xl text-white/90 max-w-3xl">
+          <p className="text-xl text-gray-300 max-w-3xl">
             Intensive, hands-on training programs designed to fast-track your DevOps career. 
             Learn from industry experts and get certified.
           </p>
@@ -95,8 +98,8 @@ function BootcampsPage() {
         ) : (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {filteredBootcamps.map(bootcamp => (
-              <div key={bootcamp.id} className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-56 overflow-hidden relative">
+              <div key={bootcamp.id} className="silver-card rounded-xl overflow-hidden min-h-[600px] flex flex-col">
+                <div className="h-56 overflow-hidden relative flex-shrink-0">
                   <img 
                     src={bootcamp.mainImage} 
                     alt={bootcamp.name}
@@ -108,9 +111,9 @@ function BootcampsPage() {
                     </span>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold text-[#111827] mb-2">{bootcamp.name}</h3>
-                  <p className="text-gray-600 mb-4">{bootcamp.description}</p>
+                  <p className="text-gray-600 mb-4 line-clamp-2">{bootcamp.description}</p>
                   
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center gap-2 text-gray-600">
@@ -148,8 +151,8 @@ function BootcampsPage() {
                     <span className="text-sm font-medium text-[#111827]">{bootcamp.certification}</span>
                   </div>
 
-                  <div className="flex gap-4">
-                    <button className="flex-1 bg-[#1E3A8A] text-white py-3 rounded-lg font-semibold hover:bg-[#1e40af] transition-colors">
+                  <div className="flex gap-4 mt-auto">
+                    <button className="flex-1 bg-gradient-to-r from-[#1E3A8A] to-[#0f3460] text-white py-3 rounded-lg font-semibold hover:from-[#1e40af] hover:to-[#1E3A8A] transition-all">
                       Enroll Now
                     </button>
                     <button className="px-6 py-3 border-2 border-[#1E3A8A] text-[#1E3A8A] rounded-lg font-semibold hover:bg-[#1E3A8A]/5 transition-colors">
@@ -206,6 +209,7 @@ function BootcampsPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

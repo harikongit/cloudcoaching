@@ -123,27 +123,29 @@ Would you like me to explain any part of this configuration in detail?`);
     <div className="min-h-screen bg-[#F3F4F6]">
       <Header />
 
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#7B42BC] to-[#1E3A8A] text-white py-20 pt-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Hero Section - Silver Disco */}
+      <div className="silver-disco-bg text-white pt-28 pb-16 min-h-[280px] flex items-center relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="flex items-center gap-3 mb-4">
-            <Sparkles size={40} className="text-[#F59E0B]" />
-            <h1 className="text-4xl font-bold">AI-Powered DevOps Learning</h1>
+            <div className="w-14 h-14 bg-gradient-to-br from-[#F59E0B] to-[#D97706] rounded-xl flex items-center justify-center shadow-lg">
+              <Sparkles size={28} className="text-white" />
+            </div>
+            <h1 className="text-4xl font-bold silver-text">AI-Powered DevOps Learning</h1>
           </div>
-          <p className="text-xl text-white/90 max-w-3xl mb-8">
+          <p className="text-xl text-gray-300 max-w-3xl mb-8">
             Leverage artificial intelligence to accelerate your DevOps journey. Generate infrastructure code, 
             get personalized learning paths, and receive instant answers to your cloud questions.
           </p>
           <div className="flex flex-wrap gap-4">
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
               <CheckCircle size={18} className="text-[#10B981]" />
               <span>Personalized Roadmaps</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
               <CheckCircle size={18} className="text-[#10B981]" />
               <span>Code Generation</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20">
               <CheckCircle size={18} className="text-[#10B981]" />
               <span>Interactive Learning</span>
             </div>
@@ -156,12 +158,12 @@ Would you like me to explain any part of this configuration in detail?`);
         <h2 className="text-3xl font-bold text-[#111827] mb-8 text-center">AI-Powered Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {aiFeatures.map((feature, idx) => (
-            <div key={idx} className="bg-white rounded-xl shadow-sm p-6 hover:shadow-lg transition-shadow">
+            <div key={idx} className="silver-card rounded-xl p-6 min-h-[220px] flex flex-col">
               <div className={`w-14 h-14 ${feature.color} rounded-xl flex items-center justify-center text-white mb-4`}>
                 {feature.icon}
               </div>
               <h3 className="text-lg font-bold text-[#111827] mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
+              <p className="text-gray-600 text-sm flex-grow">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -286,6 +288,7 @@ Would you like me to explain any part of this configuration in detail?`);
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

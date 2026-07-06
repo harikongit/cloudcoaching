@@ -30,7 +30,7 @@ function Header() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-[#10B981] rounded-lg flex items-center justify-center">
@@ -39,8 +39,8 @@ function Header() {
             <span className="text-white font-bold text-xl">CloudCoaching</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          {/* Desktop Navigation - Left aligned after logo */}
+          <div className="hidden md:flex items-center space-x-6 ml-10">
             <Link 
               to="/" 
               className={`transition-colors font-medium ${
@@ -102,12 +102,19 @@ function Header() {
               Bootcamps
             </Link>
             <Link 
-              to="/roadmaps" 
-              className="bg-[#10B981] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#059669] transition-colors"
+              to="/about" 
+              className={`transition-colors font-medium ${
+                isActive('/about') 
+                  ? 'text-[#10B981]' 
+                  : 'text-white hover:text-[#10B981]'
+              }`}
             >
-              Get Started
+              About
             </Link>
           </div>
+
+          {/* Spacer to push mobile menu button to right */}
+          <div className="flex-1 md:hidden"></div>
 
           {/* Mobile Menu Button */}
           <button 
@@ -178,11 +185,13 @@ function Header() {
               Bootcamps
             </Link>
             <Link 
-              to="/roadmaps" 
-              className="block bg-[#10B981] text-white px-6 py-2 rounded-lg font-medium text-center hover:bg-[#059669] transition-colors"
+              to="/about" 
+              className={`block transition-colors font-medium ${
+                isActive('/about') ? 'text-[#10B981]' : 'text-white hover:text-[#10B981]'
+              }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Get Started
+              About
             </Link>
           </div>
         </div>

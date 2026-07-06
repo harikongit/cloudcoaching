@@ -8,6 +8,16 @@ function RoadmapViewer() {
   const [expandedSteps, setExpandedSteps] = useState({});
   const [error, setError] = useState(null);
 
+  // Auto-select AWS DevOps Engineer Path on initial load
+  React.useEffect(() => {
+    if (roadmaps.length > 0 && !selectedRoadmap) {
+      const awsRoadmap = roadmaps.find(r => r.id === '1');
+      if (awsRoadmap) {
+        setSelectedRoadmap(awsRoadmap);
+      }
+    }
+  }, [roadmaps]);
+
   const handleSelectRoadmap = (roadmap) => {
     try {
       setSelectedRoadmap(roadmap);
@@ -119,7 +129,6 @@ function RoadmapViewer() {
                         <BookOpen size={14} />
                         {selectedRoadmap.difficulty}
                       </span>
-
                       {selectedRoadmap.documentationUrl && (
                         <a
                           href={selectedRoadmap.documentationUrl}
